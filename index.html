@@ -1,146 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Portfolio website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">AC</a>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Portfolio Website</title>
+  </head>
+
+  <body>
+    <nav>
+        <h1>Regal</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
     </nav>
 
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Arnav - Regal</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Hero Section -->
 
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-8">
-                    <p> I'm Arnav a fresher in Eph. I play football, volleyball, TT and quite a few other sports </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Arnav.C</li>
-                                <li>Eph</li>
-                                <li>Developer</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <p> 
-                            I have worked primarily only with python and know a little bit of java and solidity but would love to explore other languages and gain proficiency in the different use cases that they can perform more effectively.
-                            In python though I've worked with pygame, sklearn, mysql, tkinter, django(On a basic level) and of course basic modules like matplotlib, numpy, pandas, scipy etc. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </section>
+    <!-- More about -->
 
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="portfolioImage2.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Space invaders re-make</h4>
-                            <p class="card-text">This is the project we made for syntax error, It's essentially space invaders but can be played with our phones using it's gyro</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Skills section -->
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="portfolioImage4.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Crowdfunding project</h4>
-                            <p class="card-text">A web3 corwdfunding project that checks the time for which a certain work has to be completed by and a voting system to see if the donaters agree with the work being completed or not</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Projects section -->
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="portfolioImage3.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Momentum and volume based trading stratgeies</h4>
-                            <p class="card-text">An algorithm in python that uses the kite api (zerodha) to get current market information and based on the momentum of the closing prices and by some price action strategies predicts the future price of the stock</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+    <!-- Contact section -->
 
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
+    <!-- Social accounts - Fixed to the right -->
 
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed/v1/place?q=IIT+Roorkee+(Main+Campus),+Roorkee,+Uttarakhand,+India" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+    <!-- Scroll to top -->
 
-                <div class="col-lg-6">
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Footer section -->
 
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="social-icons mt-4">
-                <a href="https://www.github.com/MalleableDuck" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/arnav_c_" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/arnav-chatterjee-b2569b290" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-</body>
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
 
 
