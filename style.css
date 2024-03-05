@@ -89,32 +89,6 @@ nav {
     cursor: pointer;
     display: none;
   }
-
-/*.hero {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background-image: url('assets/images/portfolioImage1.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.bio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-.bio p {
-    font-size: 20px;
-    line-height: 1.5;
-}*/
-
 .hero {
     display: flex;
     align-items: center;
@@ -269,7 +243,9 @@ nav {
   .contact-form-container .input-field {
     width: 100%;
     padding-top: 10px;
+    padding-left: 20px;
     padding-bottom: 10px;
+    padding-right: 20px;
     border-radius: 5px;
     border: none;
     border: 2px outset var(--primary-color);
@@ -314,7 +290,6 @@ nav {
   }
 
   @media screen and (max-width: 720px) {
-    /*changes reflects on screen with a width of 720px and below*/
   }
 
   nav {
@@ -354,10 +329,6 @@ nav {
     width: 5.875rem;
     height: 5.25rem;
   }
-
-  /*.projects-container {
-    flex-direction: column;
-  }*/
 
   .project-container {
     width: 15.875rem;
